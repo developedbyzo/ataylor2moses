@@ -61,6 +61,8 @@
     color: #fefefe;
     font-weight: bold;
   }
+
+  /* Body Text Area */
   
   .story-img {
     margin-bottom: 2rem; 
@@ -69,3 +71,6 @@
     margin-right: auto; 
     width: 80%;
   }
+
+/* Footer Area */
+
