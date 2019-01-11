@@ -1,5 +1,5 @@
-$(document).foundation()
-//Sticky Footer//
+$(document).foundation();
+// //Sticky Footer//
 $(window).bind("load", function () {
     var footer = $("#footer");
     var pos = footer.position();
@@ -12,3 +12,12 @@ $(window).bind("load", function () {
         });
     }
 });
+// window.onload = function() {
+//     if (window.jQuery) {  
+//         // jQuery is loaded  
+//         alert("Yeah!");
+//     } else {
+//         // jQuery is not loaded
+//         alert("Doesn't Work");
+//     }
+// }
