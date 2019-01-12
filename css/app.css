@@ -70,12 +70,13 @@
     margin-left: auto; 
     margin-right: auto; 
     width: 80%;
+    text-align: center;
   }
 
   .story-imgclone {
     background-color: red;
-    width: 906px;
-    height: 377px;
+    width: 80%;
+    height: 100%;
     margin-bottom: 2rem;
     display: block;
     margin-left: auto;
