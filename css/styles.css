@@ -1,27 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+html {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+html::-webkit-scrollbar { width: 0 !important }
+
 body {
-  margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  background: url("../img/AlexisAlonzo-11.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  margin: 0;
+  background: #eee;
+  height: auto;
 }
 
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar .nav a {
-  float: left;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 14px 16px;
+p,ul,li,h5 {
+  text-align: left;
 }
 
 h1 {
@@ -35,18 +29,378 @@ h2 {
   font-weight: 400;
   font-size: 1.2rem;
   text-transform: capitalize;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#spacer {
+  border-bottom: dotted 3px #fff;
+  width: 100%;
+}
+
+#mini-spacer {
+  border-bottom: dotted 1px #fff;
+  width: 100%;
+}
+
+#button-moved {
+  text-align: right;
+  width: 100%;
+  padding: 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px transparent solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 500ms ease;
+}
+
+button:hover {
+  background: royalblue;
+}
+
+main {
+  /* max-width: 1400px; */
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+  background: #fff;
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 23vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#landing-text h2 {
+  color: #888;
+}
+
+#landing-image {
+  background-image: url("../img/AlexisAlonzo-11.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 77vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+#landing-info {
+  background: #fff;
+}
+
+#landing-info-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 13vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#landing-info-text h2 {
+  color: #888;
+}
+
+#landing-info-image {
+  background-image: url("../img/AlexisAlonzo-39.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 87vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#info {
+  padding: 1.5rem;
+  text-align: center;
+  background: linear-gradient(rgb(233, 154, 9), rgb(83, 4, 83));
+  color: #fff;
+}
+
+#info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#info a:hover {
+  border-bottom: dotted 1px royalblue;
+  color: royalblue;
+}
+
+#info-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#info-text h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#info-video {
+  text-align: center;
+  height: 50vh;
+  flex: 0 1 60vw;
   margin: 0 auto;
 }
-#landing {
-  position: relative;
+
+#about {
+  padding: 1.5rem;
   text-align: center;
-  color: white;
+  background: rgb(61, 67, 139);
+  color: #fff;
 }
-#landing-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+#about a {
+  text-decoration: none;
+  color: rgb(218, 212, 212);
+}
+
+#about a:hover {
+  border-bottom: dotted 1px rgb(218, 212, 212);
+  color: rgb(218, 212, 212);
+}
+
+#about-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: auto /*60vh*/;/* Expand content area as needed. */
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
 }
+
+#about-text h3 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#about-image {
+  background: url("../img/blue_shrimp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+#what-are-they {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(148, 62, 13);
+  color: #fff;
+}
+
+#what-are-they a {
+  text-decoration: none;
+  color: rgb(218, 212, 212);
+}
+
+#what-are-they a:hover {
+  border-bottom: dotted 1px rgb(218, 212, 212);
+  color: rgb(218, 212, 212);
+}
+
+#what-are-they-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: /*auto*/ 40vh;/*Expand content area as needed.*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#what-are-they-text h3 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#what-are-they-image {
+  background: url("../img/orange_shrimp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+#how-to-care {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(102, 115, 2);
+  color: #fff;
+}
+
+#how-to-care a {
+  text-decoration: none;
+  color: rgb(218, 212, 212);
+}
+
+#how-to-care a:hover {
+  border-bottom: dotted 1px rgb(218, 212, 212);
+  color: rgb(218, 212, 212);
+}
+
+#how-to-care-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: auto /*60vh*/;/* Expand content area as needed. */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#how-to-care-text h3 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#how-to-care-image {
+  background: url("../img/red_shrimp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+#breeding {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(25, 97, 79);
+  color: #fff;
+}
+
+#breeding a {
+  text-decoration: none;
+  color: rgb(218, 212, 212);
+}
+
+#breeding a:hover {
+  border-bottom: dotted 1px rgb(218, 212, 212);
+  color: rgb(218, 212, 212);
+}
+
+#breeding-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: auto /*60vh*/;/* Expand content area as needed. */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#breeding-text h3 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#breeding-image {
+  background: url("../img/blue_dream_berried_by_pelzwanze.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: auto;
+  color: #333;
+}
+
+
+/* Screen Sizes 600px and Up 
+@media (min-width: 600px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 700px and Up 
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}*/
