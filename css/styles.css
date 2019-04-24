@@ -32,6 +32,13 @@ h2 {
   margin: 0;
 }
 
+a {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
 img {
   display: block;
   width: 100%;
@@ -110,12 +117,20 @@ main {
 #landing-info-text {
   display: flex;
   flex: 0 1 40vw;
-  height: 13vh;
+  height: 20vh;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-right: 1em;
   padding-left: 1em;
+}
+
+nav a {
+  color: #333;
+  /* text-align: center; */
+  text-decoration: none;
+  padding-right: 5px;
+  margin: 0;
 }
 
 #landing-info-text h2 {
@@ -127,7 +142,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 87vh;
+  height: 80vh;
   flex: 0 1 60vw;
   margin: 0;
 }
@@ -167,7 +182,7 @@ main {
 #info-text {
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -185,7 +200,7 @@ main {
 
 #info-video {
   text-align: center;
-  height: 50vh;
+  height: 40vh;
   flex: 0 1 60vw;
   margin: 0 auto;
 }
