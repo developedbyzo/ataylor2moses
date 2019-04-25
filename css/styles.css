@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -205,195 +208,87 @@ nav a {
   margin: 0 auto;
 }
 
-#about {
-  padding: 1.5rem;
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
   text-align: center;
-  background: rgb(61, 67, 139);
-  color: #fff;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
 
-#about a {
-  text-decoration: none;
-  color: rgb(218, 212, 212);
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#about a:hover {
-  border-bottom: dotted 1px rgb(218, 212, 212);
-  color: rgb(218, 212, 212);
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
 }
 
-#about-text {
-  display: flex;
-  flex: 0 1 40vw;
-  height: auto /*60vh*/;/* Expand content area as needed. */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 1em;
-  padding-left: 1em;
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
 }
 
-#about-text h3 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#about-image {
-  background: url("../img/blue_shrimp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  flex: 0 1 60vw;
-  margin: 0;
-}
-
-#what-are-they {
-  padding: 1.5rem;
-  text-align: center;
-  background: rgb(148, 62, 13);
-  color: #fff;
-}
-
-#what-are-they a {
-  text-decoration: none;
-  color: rgb(218, 212, 212);
-}
-
-#what-are-they a:hover {
-  border-bottom: dotted 1px rgb(218, 212, 212);
-  color: rgb(218, 212, 212);
-}
-
-#what-are-they-text {
-  display: flex;
-  flex: 0 1 40vw;
-  height: /*auto*/ 40vh;/*Expand content area as needed.*/
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-#what-are-they-text h3 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#what-are-they-image {
-  background: url("../img/orange_shrimp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  flex: 0 1 60vw;
-  margin: 0;
-}
-
-#how-to-care {
-  padding: 1.5rem;
-  text-align: center;
-  background: rgb(102, 115, 2);
-  color: #fff;
-}
-
-#how-to-care a {
-  text-decoration: none;
-  color: rgb(218, 212, 212);
-}
-
-#how-to-care a:hover {
-  border-bottom: dotted 1px rgb(218, 212, 212);
-  color: rgb(218, 212, 212);
-}
-
-#how-to-care-text {
-  display: flex;
-  flex: 0 1 40vw;
-  height: auto /*60vh*/;/* Expand content area as needed. */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-#how-to-care-text h3 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#how-to-care-image {
-  background: url("../img/red_shrimp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  flex: 0 1 60vw;
-  margin: 0;
-}
-
-#breeding {
-  padding: 1.5rem;
-  text-align: center;
-  background: rgb(25, 97, 79);
-  color: #fff;
-}
-
-#breeding a {
-  text-decoration: none;
-  color: rgb(218, 212, 212);
-}
-
-#breeding a:hover {
-  border-bottom: dotted 1px rgb(218, 212, 212);
-  color: rgb(218, 212, 212);
-}
-
-#breeding-text {
-  display: flex;
-  flex: 0 1 40vw;
-  height: auto /*60vh*/;/* Expand content area as needed. */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-#breeding-text h3 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#breeding-image {
-  background: url("../img/blue_dream_berried_by_pelzwanze.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  flex: 0 1 60vw;
-  margin: 0;
-}
-
-footer {
-  padding: 2rem 1rem;
-  text-align: center;
-  margin: auto;
-  color: #333;
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 

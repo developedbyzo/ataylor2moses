@@ -24,24 +24,74 @@
           </nav>
         </div>
       </div>
-      <div id="landing-info-image">Gallery Goes Here</div>
+      <!-- <div id="landing-info-image">Gallery Goes Here</div> -->
     </div>
 
-    <!-- Wedding Info Area -->
-     <div id="info">
-      <div id="info-text">
-        <div id="info-text-inner">
-          <h2>About The Couple</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam itaque pariatur molestias magnam consequatur recusandae rerum exercitationem laudantium consequuntur? Aut porro assumenda culpa sit incidunt suscipit quod, nulla voluptate.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus necessitatibus doloribus quibusdam similique tempora aliquid ducimus dicta distinctio blanditiis, itaque atque quas ipsa dolor? Molestias, dicta. Impedit, aliquid alias!<br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iusto assumenda blanditiis molestiae atque odit possimus placeat eum asperiores quidem, suscipit necessitatibus mollitia, et illo quos molestias exercitationem consectetur nesciunt!<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam maxime magnam veritatis temporibus. In neque soluta modi eligendi ab facere eius nihil commodi. Est eveniet iure, explicabo aliquid vero ipsum?</p> 
-        </div>
+    <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="img/AlexisAlonzo-1.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="img/AlexisAlonzo-12.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="img/AlexisAlonzo-13.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="img/AlexisAlonzo-15.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="img/AlexisAlonzo-2.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="img/AlexisAlonzo-20.jpg" style=" width:70%; padding-left: 30%;">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img/AlexisAlonzo-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column"> 
+        <img class="demo cursor" src="img/AlexisAlonzo-12.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/AlexisAlonzo-13.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/AlexisAlonzo-15.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/AlexisAlonzo-2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div> 
+      <div class="column">
+        <img class="demo cursor" src="img/AlexisAlonzo-20.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
       </div>
     </div>
-    <div id="info-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/O8OKhEswj1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  </div>
   </main>
   <footer style="text-align: center;">
     <h3>Send Me Your Thoughts!</h3>
